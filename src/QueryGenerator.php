@@ -1,8 +1,18 @@
 <?php
 
+/**
+ * src/QueryGenerator.php
+ * CSV to SQL Query Generator Script
+
+ *
+ * @package query-generator-from-csv
+ * @author Md Ruhul Amin (ruhul11bd@gmail.com)
+ * @version 1.0.1
+ */
+
 namespace Ruhulfbr\QueryGeneratorFromCsv;
 
-class Generator
+class QueryGenerator
 {
     private string $_TABLE_NAME;
     private string $_FILE_PATH;

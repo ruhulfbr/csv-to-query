@@ -1,6 +1,6 @@
 {
     "name": "ruhulfbr/query-generator-from-csv",
-    "description": "This package provides a simple utility to convert data from a CSV file into SQL queries for database insertion.",
+    "description": "This package provides a simple utility to convert data from a CSV file into SQL queries for database insertion and Create table.",
     "version": "1.0.0",
     "type": "library",
     "license": "MIT",
