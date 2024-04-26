@@ -24,10 +24,14 @@
         "query",
         "generator",
         "database",
+        "table",
+        "column",
+        "row",
         "data",
         "conversion",
         "utilities",
         "php",
+        "php8",
         "composer",
         "package"
     ]
