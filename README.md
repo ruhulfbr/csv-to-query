@@ -7,7 +7,7 @@ This package provides a simple utility to convert data from a CSV file into SQL 
 To install the package, you can use [Composer](https://getcomposer.org/):
 
 ```bash
-composer require ruhulfbr/query-generator-from-csv
+composer require ruhulfbr/csv-to-query
 ```
 
 ## Usage
@@ -17,19 +17,19 @@ composer require ruhulfbr/query-generator-from-csv
 
 require_once 'vendor/autoload.php';
 
-use Ruhulfbr\QueryGeneratorFromCsv\QueryGenerator;
+use Ruhulfbr\CsvToQuery\Query;
 
-$filePath = "sample.csv";  // (String) Required, Absolute file path
+$filePath = "example.csv";  // (String) Required, Absolute file path
 $createQuery = false; // (Boolean) Optional, set true if need to generate table create query, Default is FALSE;
 $tableName = ""; // (String) Optional, If tableName not provided then csv filename will be the table name, Default is an empty string;
 
 // With Named argument
-// $generator = new QueryGenerator($filePath, _TABLE_NAME: "your_table_name");
-// $generator = new QueryGenerator($filePath, _CREATE_QUERY: true);
+// $query = new Query($filePath, _TABLE_NAME: "your_table_name");
+// $query = new Query($filePath, _CREATE_QUERY: true);
 
 // Together
-$generator = new QueryGenerator($filePath, $createQuery, $tableName);
-print_r($generator->generate());
+$query = new Query($filePath, $createQuery, $tableName);
+print_r($query->generate());
 
 ```
 ## Response
